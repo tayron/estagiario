@@ -25,12 +25,12 @@ func GetResponse(client gpt3.Client, ctx context.Context, quesiton string) {
 	}, func(resp *gpt3.CompletionResponse) {
 		responseText += resp.Choices[0].Text
 	})
+
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(13)
 	}
 
-	// fmt.Printf(responseText)
 	ExecuteShellScript(responseText)
 	fmt.Printf("\n")
 }
@@ -42,7 +42,6 @@ func (NullWriter) Write([]byte) (int, error) { return 0, nil }
 func main() {
 	log.SetOutput(new(NullWriter))
 	apiKey := os.Getenv("API_KEY_CHAT_GPT")
-	//apiKey := "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"
 	if apiKey == "" {
 		panic("Missing API KEY for CHAT GPT")
 	}
