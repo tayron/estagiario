@@ -6,7 +6,7 @@ Qualquer coisa que pedir para ser executado, irá executar sem perdir confirmaç
 Utilize por sua conta e risco!!!!
 ## Configuração
 Crie uma variavel de ambiente com sua chat do chatGPT chamada ```API_KEY_CHAT_GPT```
-Para gerar sua chave acesse (https://platform.openai.com/account/api-keys)[https://platform.openai.com/account/api-keys]
+Para gerar sua chave acesse [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)
 
 ### Exemplo de criação para linux:
 Abra o arquivo ```.bashrc```:
