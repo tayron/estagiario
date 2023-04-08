@@ -18,7 +18,7 @@ export API_KEY_CHAT_GPT=sua-chave-aqui
 ```
 
 ### Executando a aplicação
-Aplicação utilizando chatGPT que realiza tarefas na maquina local através de comandos textuais
+Para executar uma aplicação em golang basta executar o comando abaixo:
 
 ```sh
 go run *.go
@@ -73,12 +73,19 @@ Hello World
 -----------------------------------------------------------------------
 ```
 
+Logo em seguida poderá ver que foi criado o diretório chamado teste com a seguinte estrutura
+```sh
+- teste
+ - index.js
+ - package.json
+ ```
+
 ### Como utilizar nos seus projetos
 Crie o um executável e coloque dentro da pasta de seus projetos, porém não versione, adicione ele na lista de arquivos ignorados.
 O diretório raiz será onde o executável estiver sendo chamado.
 
 #### Comando para criar executável
-O comando abaixo irá gerar um executável chamado estariavel
+O comando abaixo irá gerar um executável chamado ```estagiario```
 ```sh
 go build -o estagiario -ldflags "-s -w" main.go
 ```
