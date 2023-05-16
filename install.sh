@@ -5,7 +5,9 @@ URL="https://github.com/tayron/estagiario/raw/main/dist/linux-64/estagiario"
 EXECUTAVEL="estagiario"
 
 echo "Chamando o estagiário..."
+echo ""
 curl -L -o "$EXECUTAVEL" "$URL"
+echo ""
 
 # Verifica se o download foi concluído com sucesso
 if [ -e "$EXECUTAVEL" ]; then

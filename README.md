@@ -101,15 +101,17 @@ alias chamarEstagiario="/home/tayron/Scripts/./chamar-estagiario.sh"
 
 Feche todos os terminais e abra seu VsCode, abra um projeto qualquer e no terminal do VsCode digite ```chamarEstagiario ```, o resultado deverá ser semelhante ao retorno abaixo:
 ```sh
-Baixando o executável...
+Chamando o estagiário...
+
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-100 6404k  100 6404k    0     0  11.2M      0 --:--:-- --:--:-- --:--:-- 11.2M
-Download concluído com sucesso!
+100 6404k  100 6404k    0     0  2250k      0  0:00:02  0:00:02 --:--:-- 2438k
+
+Estagiário pronto para te ajudar!
 ```
 
-Uma vez que foi dito que o download foi concluído, na raíz do projeto deve ter sido criado um arquivo chamado estagiário, basta executá-lo ```sh ./estagiário ``` e começar a usar.
+Uma vez que foi dito que **Estagiário pronto para te ajudar!**, na raíz do projeto deve ter sido criado um arquivo chamado **estagiario**, basta executá-lo ```./estagiário ``` e começar a usar.
 
 #### Comando para criar executável
 O comando abaixo irá gerar um executável chamado ```estagiario```
