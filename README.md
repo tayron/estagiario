@@ -89,10 +89,17 @@ O diretório raiz será onde o executável estiver sendo chamado.
 Em uma pasta de sua preferencia no linux, eu utilizo ```/home/tayron/Scripts/```, crie um arquivo chamado: ```chamar-estagiario.sh``` e dê permissão de execução: ```chmod +x chamar-estagiario.sh```, o conteúdo dele deverá ser o mesmo conteúdo do arquivo [https://github.com/tayron/estagiario/install.sh](install.sh) localizado na raiz deste projeto.
 
 Agora crie um alias no seu sistema operacional seguindo o comando: 
-1. ```sh sudo vim ~/.bashrc ```
-2. No final do arquivo adicione o comando: ```sh alias chamarEstagiario="/home/tayron/Scripts/./chamar-estagiario.sh" ```, troque ```/home/tayron/Scripts``` pelo caminho de onde você criou o arquivo shell script.
+```sh 
+sudo vim ~/.bashrc 
+```
 
-3. Feche todos os terminais e abra seu VsCode, abra um projeto qualquer e no terminal do VsCode digite ```sh chamarEstagiario ```, o resultado deverá ser semelhante ao retorno abaixo:
+No final do arquivo adicione o comando: 
+```sh 
+alias chamarEstagiario="/home/tayron/Scripts/./chamar-estagiario.sh" 
+```
+**OBS.:** Troque ```/home/tayron/Scripts``` pelo caminho de onde você criou o arquivo shell script.
+
+3. Feche todos os terminais e abra seu VsCode, abra um projeto qualquer e no terminal do VsCode digite ```chamarEstagiario ```, o resultado deverá ser semelhante ao retorno abaixo:
 ```sh
 Baixando o executável...
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
