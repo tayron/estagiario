@@ -99,7 +99,7 @@ alias chamarEstagiario="/home/tayron/Scripts/./chamar-estagiario.sh"
 ```
 **OBS.:** Troque ```/home/tayron/Scripts``` pelo caminho de onde você criou o arquivo shell script.
 
-3. Feche todos os terminais e abra seu VsCode, abra um projeto qualquer e no terminal do VsCode digite ```chamarEstagiario ```, o resultado deverá ser semelhante ao retorno abaixo:
+Feche todos os terminais e abra seu VsCode, abra um projeto qualquer e no terminal do VsCode digite ```chamarEstagiario ```, o resultado deverá ser semelhante ao retorno abaixo:
 ```sh
 Baixando o executável...
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current

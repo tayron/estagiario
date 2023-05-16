@@ -4,13 +4,13 @@ URL="https://github.com/tayron/estagiario/raw/main/dist/linux-64/estagiario"
 
 EXECUTAVEL="estagiario"
 
-echo "Baixando o executável..."
+echo "Chamando o estagiário..."
 curl -L -o "$EXECUTAVEL" "$URL"
 
 # Verifica se o download foi concluído com sucesso
 if [ -e "$EXECUTAVEL" ]; then
-  echo "Download concluído com sucesso!"
+  echo "Estagiário pronto para te ajudar!"
   chmod +x "$EXECUTAVEL"  # Dá permissão de execução ao arquivo
 else
-  echo "Erro ao baixar o executável."
+  echo "Não foi possível chamar o estagiário!"
 fi
