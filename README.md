@@ -85,6 +85,25 @@ Logo em seguida poderá ver que foi criado o diretório chamado teste com a segu
 Crie o um executável e coloque dentro da pasta de seus projetos, porém não versione, adicione ele na lista de arquivos ignorados.
 O diretório raiz será onde o executável estiver sendo chamado.
 
+### Chamando estagiário para trabalhar nos seus projetos
+Em uma pasta de sua preferencia no linux, eu utilizo ```/home/tayron/Scripts/```, crie um arquivo chamado: ```chamar-estagiario.sh``` e dê permissão de execução: ```chmod +x chamar-estagiario.sh```, o conteúdo dele deverá ser o mesmo conteúdo do arquivo [https://github.com/tayron/estagiario/install.sh](install.sh) localizado na raiz deste projeto.
+
+Agora crie um alias no seu sistema operacional seguindo o comando: 
+1. ```sh sudo vim ~/.bashrc ```
+2. No final do arquivo adicione o comando: ```sh alias chamarEstagiario="/home/tayron/Scripts/./chamar-estagiario.sh" ```, troque ```/home/tayron/Scripts``` pelo caminho de onde você criou o arquivo shell script.
+
+3. Feche todos os terminais e abra seu VsCode, abra um projeto qualquer e no terminal do VsCode digite ```sh chamarEstagiario ```, o resultado deverá ser semelhante ao retorno abaixo:
+```sh
+Baixando o executável...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 6404k  100 6404k    0     0  11.2M      0 --:--:-- --:--:-- --:--:-- 11.2M
+Download concluído com sucesso!
+```
+
+Uma vez que foi dito que o download foi concluído, na raíz do projeto deve ter sido criado um arquivo chamado estagiário, basta executá-lo ```sh ./estagiário ``` e começar a usar.
+
 #### Comando para criar executável
 O comando abaixo irá gerar um executável chamado ```estagiario```
 ```sh
